@@ -7,6 +7,7 @@
 body {
   color: #fff;
   background-color: #000;
+  overflow-x: hidden;
 }
 .container1 {
   height: 100vh;
@@ -124,7 +125,7 @@ h2 {
   transform: scale(1.05);
 }
 .container3 {
-  justify-content: space-around; 
+  justify-content: space-around;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -225,8 +226,8 @@ input[type="radio"] {
   width: 50%;
   max-width: 400px;
   border: none;
-  border-radius: 5px; 
-  margin-left: 10%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 .Id2 .email2::placeholder {
   font-size: 18px;
@@ -247,7 +248,11 @@ input[type="radio"] {
   background-color: #111;
   color: #777;
 }
-
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer h2 {
   margin-bottom: 20px;
 }
@@ -259,7 +264,7 @@ input[type="radio"] {
   color: #ccc;
   text-decoration: none;
   font-size: 14px;
-  font-size: 14px; 
+  font-size: 14px;
 }
 .footer a:hover {
   text-decoration: underline;
@@ -271,23 +276,24 @@ input[type="radio"] {
   margin-top: 20px;
 }
 @media screen and (max-width: 767px) {
-.container2 {
-  position: absolute;
-  top: 36%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 20px;
-}
-.container1 {
-padding: 0;
-}
-.Started {
+  .container2 {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+  }
+  .container1 {
+    padding: 0;
+  }
+
+  .Started {
     width: 50%;
     margin: 0 auto;
-}
-  
+  }
+
   .container2 h1 {
     font-size: 2rem;
   }
@@ -307,7 +313,7 @@ padding: 0;
   .email2 {
     width: 100%;
   }
-   .logo {
+  .logo {
     width: 100px;
   }
   .language {
